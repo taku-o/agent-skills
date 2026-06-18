@@ -26,6 +26,16 @@
       },
       "category": "development",
       "source": "./plugins/prevent-auto-commit"
+    },
+    {
+      "name": "rm-file",
+      "description": "rm でファイルを削除する時、cp でファイルを上書きする時に -f オプションを付けて実行する。",
+      "author": {
+        "name": "taku-o",
+        "email": "mail@nanasi.jp"
+      },
+      "category": "development",
+      "source": "./plugins/rm-file"
     }
   ]
 }

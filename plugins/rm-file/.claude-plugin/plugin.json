@@ -1,0 +1,9 @@
+{
+  "name": "rm-file",
+  "description": "rm でファイルを削除する時、cp でファイルを上書きする時に -f オプションを付けて実行する。",
+  "version": "1.0.0",
+  "author": {
+    "name": "taku-o",
+    "email": "mail@nanasi.jp"
+  }
+}
