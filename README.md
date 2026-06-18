@@ -31,6 +31,7 @@ Claude Code でこの marketplace を登録します。
 | `jj-new` | `jj new` を実行して新しい jj チェンジを作成する。現在のチェンジの description が未設定なら Conventional Commits スタイルで設定してから実行する。 |
 | `prevent-auto-commit` | AI が `git commit` / `jj new` を自己判断で実行することを防ぐガードレール。明示的な指示やスキルのワークフロー時のみ許可する。 |
 | `rm-file` | `rm` でファイル削除、`cp` でファイル上書きをする際に `-f` オプションを付けて実行する。 |
+| `write-claude-code-fnc` | Claude Code のスキル・プラグイン・サブエージェント・フック・設定を作成・修正する。作業前に公式ドキュメントを参照して正しい配置・フォーマットを確認する。 |
 
 ## 構成
 
@@ -51,11 +52,17 @@ agent-skills/
     │   └── skills/
     │       └── prevent-auto-commit/
     │           └── SKILL.md
-    └── rm-file/
+    ├── rm-file/
+    │   ├── .claude-plugin/
+    │   │   └── plugin.json
+    │   └── skills/
+    │       └── rm-file/
+    │           └── SKILL.md
+    └── write-claude-code-fnc/
         ├── .claude-plugin/
         │   └── plugin.json
         └── skills/
-            └── rm-file/
+            └── write-claude-code-fnc/
                 └── SKILL.md
 ```
 

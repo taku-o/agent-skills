@@ -36,6 +36,16 @@
       },
       "category": "development",
       "source": "./plugins/rm-file"
+    },
+    {
+      "name": "write-claude-code-fnc",
+      "description": "Claude Code のスキル・プラグイン・サブエージェント・フック・設定を新規作成・修正する。作業前に公式ドキュメントを参照して正しい配置場所・フォーマットを確認してから実装する。",
+      "author": {
+        "name": "taku-o",
+        "email": "mail@nanasi.jp"
+      },
+      "category": "development",
+      "source": "./plugins/write-claude-code-fnc"
     }
   ]
 }
