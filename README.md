@@ -22,7 +22,7 @@ Claude Code でこの marketplace を登録します。
 登録後、プラグインをインストールします。
 
 ```
-/plugin install jj-new@agent-skills
+/plugin install jj-new@taku-o-skills
 ```
 
 `/plugin` を開いて GUI から選択することもできます。

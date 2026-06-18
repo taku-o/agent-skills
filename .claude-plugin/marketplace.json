@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "agent-skills",
+  "name": "taku-o-skills",
   "description": "taku-o の Claude Code Agent Skills をまとめた marketplace。jj など日常開発ワークフローを補助するスキルを提供する。",
   "owner": {
     "name": "taku-o",
