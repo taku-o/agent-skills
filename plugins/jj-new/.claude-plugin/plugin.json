@@ -1,0 +1,9 @@
+{
+  "name": "jj-new",
+  "description": "jj new を実行して新しい jj チェンジを作成する。現在のチェンジの description が未設定なら、変更内容を確認して Conventional Commits スタイルの description を設定してから実行する。",
+  "version": "1.0.0",
+  "author": {
+    "name": "taku-o",
+    "email": "mail@nanasi.jp"
+  }
+}

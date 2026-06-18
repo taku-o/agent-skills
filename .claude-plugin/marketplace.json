@@ -1,0 +1,21 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "agent-skills",
+  "description": "taku-o の Claude Code Agent Skills をまとめた marketplace。jj など日常開発ワークフローを補助するスキルを提供する。",
+  "owner": {
+    "name": "taku-o",
+    "email": "mail@nanasi.jp"
+  },
+  "plugins": [
+    {
+      "name": "jj-new",
+      "description": "jj new を実行して新しい jj チェンジを作成する。現在のチェンジの description が未設定なら Conventional Commits スタイルで設定してから実行する。",
+      "author": {
+        "name": "taku-o",
+        "email": "mail@nanasi.jp"
+      },
+      "category": "development",
+      "source": "./plugins/jj-new"
+    }
+  ]
+}
