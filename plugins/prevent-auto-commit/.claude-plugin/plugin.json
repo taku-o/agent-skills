@@ -1,0 +1,9 @@
+{
+  "name": "prevent-auto-commit",
+  "description": "AI が git commit や jj new を自己判断で実行することを防ぐガードレール。ユーザーの明示的な指示やスキルのワークフローに組み込まれている場合のみコミット・スナップショットを許可する。",
+  "version": "1.0.0",
+  "author": {
+    "name": "taku-o",
+    "email": "mail@nanasi.jp"
+  }
+}
