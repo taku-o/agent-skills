@@ -2,28 +2,6 @@
 
 taku-o の Claude Code [Agent Skills](https://docs.claude.com/en/docs/claude-code/skills) をまとめた Claude Code プラグイン marketplace です。
 
-## インストール
-
-Claude Code でこの marketplace を登録します。
-
-```
-/plugin marketplace add taku-o/agent-skills
-```
-
-ローカルのクローンから登録する場合:
-
-```
-/plugin marketplace add /path/to/agent-skills
-```
-
-登録後、プラグインをインストールします。
-
-```
-/plugin install jj-new@agent-skills
-```
-
-`/plugin` を開いて GUI から選択することもできます。
-
 ## 収録プラグイン
 
 | プラグイン | 説明 |
@@ -33,40 +11,21 @@ Claude Code でこの marketplace を登録します。
 | `rm-file` | `rm` でファイル削除、`cp` でファイル上書きをする際に `-f` オプションを付けて実行する。 |
 | `write-claude-code-fnc` | Claude Code のスキル・プラグイン・サブエージェント・フック・設定を作成・修正する。作業前に公式ドキュメントを参照して正しい配置・フォーマットを確認する。 |
 
-## 構成
+## インストール
+
+Claude Code でこの marketplace を登録します。
 
 ```
-agent-skills/
-├── .claude-plugin/
-│   └── marketplace.json          # marketplace 定義（収録プラグイン一覧）
-└── plugins/
-    ├── jj-new/
-    │   ├── .claude-plugin/
-    │   │   └── plugin.json        # プラグイン manifest
-    │   └── skills/
-    │       └── jj-new/
-    │           └── SKILL.md       # スキル本体
-    ├── prevent-auto-commit/
-    │   ├── .claude-plugin/
-    │   │   └── plugin.json
-    │   └── skills/
-    │       └── prevent-auto-commit/
-    │           └── SKILL.md
-    ├── rm-file/
-    │   ├── .claude-plugin/
-    │   │   └── plugin.json
-    │   └── skills/
-    │       └── rm-file/
-    │           └── SKILL.md
-    └── write-claude-code-fnc/
-        ├── .claude-plugin/
-        │   └── plugin.json
-        └── skills/
-            └── write-claude-code-fnc/
-                └── SKILL.md
+/plugin marketplace add taku-o/agent-skills
 ```
 
-新しいスキルを追加するときは、`plugins/<name>/` 配下に同じ構成でプラグインを置き、`.claude-plugin/marketplace.json` の `plugins` 配列にエントリを追加します。
+登録後、プラグインをインストールします。
+
+```
+/plugin install jj-new@agent-skills
+```
+
+`/plugin` を開いて GUI から選択することもできます。
 
 ## ライセンス
 
